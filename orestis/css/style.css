@@ -13,150 +13,158 @@
 	src: url('../fonts/Comfortaa/Comfortaa-Regular.eot');
 	src: url('../fonts/Comfortaa/Comfortaa-Regular.woff') format('woff'), url('../fonts/Comfortaa/Comfortaa-Regular.ttf') format('truetype'), url('../fonts/Comfortaa/Comfortaa-Regular.svg') format('svg');
 }
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+* {
+	box-sizing: border-box
+}
+
+html {
 	background: #3F3B3B url(../images/bg-header.gif) repeat-x top center;
 	line-height: 1;
-	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
-header {
-	width: 936px;
-	margin: 0 auto;
+.fright {
+	float: right;
+}
+
+.fleft {
+	float: right;
+}
+
+.mtop30 {
+	margin-top: 30px;
+}
+
+.mtop60 {
+	margin-top: 60px;
+}
+
+body {
+	margin: 0;
 	padding: 0;
 }
 
-header nav a {
-	float: right;
-	background: #3F3B3B;
-	color: #fff;
-	display: inline-block;
-	font-size: 16px;
-	height: 30px;
-	letter-spacing: 0.05em;
-	line-height: 30px;
-	margin: 130px 10px 0 10px;
-	padding: 0 15px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
+.main-body-container {
+	margin: 0 auto;
+	min-height: 812px;
+	min-width: 1125px;
+	width: 60%;
 }
 
-header nav .logo {
-	float: left;
-	margin: 0;
-	padding: 30px 0 0 0;
-	display: inline-block;
+header {
+	display: flow-root;
 }
 
-header nav .logo a {
+#header-wrapper {
+	width: 800px;
+}
+
+#header-wrapper > a {
+	margin-top: 15px;
 	background: url(../images/bg-logo.png) repeat-x top left;
 	color: #fff;
-	display: inline-block;
 	font-family: 'Arimo-Bold';
-	font-size: 60px;
+	font-size: 30px;
 	font-weight: normal;
-	height: 60px;
 	line-height: 60px;
-	margin: 124px 10px 0 10px;
 	padding: 0 50px;
 	text-align:center;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-header .article {
-	display:inline-block;
+nav {
+	margin-top: 110px;
+}
+
+nav a, #contact-card a {
+	float: right;
+	background: #3F3B3B;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	height: 40px;
+	letter-spacing: 0.05em;
+	line-height: 40px;
+	padding: 0 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+#contact-card {
 	background: #fff;
 	border: 2px solid #DB1414;
 	border-radius: 4px;
-	margin: 30px auto;
-	overflow: hidden;
-	padding: 0;
-	width: 936px;
+	display: flow-root;
 }
 
-header .article img {
+#contact-card img {
 	float: left;
-	margin: 0 50px 0 0;
+	margin-right: 50px;
 	padding: 0;
 }
 
-header .article h1 {
+#contact-card h1 {
+	width: 500px;
+	display: inline-block;
+	margin: 0;
+	padding: 20px 0 0 0;
 	color: #1b2130;
-	font-family: 'ChangaOne';
-	font-size: 40px;
+	font-family: 'Jura', sans-serif;
+	font-size: 30px;
 	font-weight: normal;
-	margin: 0;
-	line-height: 50px;
-	padding: 110px 30px 30px;
+	line-height: 40px;
 }
 
-.flex-cont-1 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	row-gap: 30px;
-}
-
-.flexbox-item {
-	margin: 20px;
-	padding: 0;
-	width: 250px;
-	height: 400px;
+.gallery {
 	text-align: center;
-	overflow: hidden;
-	background: url(../images/frame-red-thin.png) no-repeat center top;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.flexbox-item:hover {
-	margin: 20px;
-	padding: 0;
-	width: 250px;
-	height: 400px;
+.slick-prev {
+  left: -40px;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-track {
+	height: 330px;
+}
+
+.gallery-item {
+	margin-top: 10px;
+	box-shadow: 0px 4px 15px #000000;
+	max-width: 300px;
+	min-height: 200px;
 	text-align: center;
-	overflow: visible;
-	background: url(../images/frame-red-thin.png) no-repeat center top;
+	background: #fff;
 }
 
-.flexbox-item img {
-	max-width: 250px;
-	max-height: 300px;
-	display: block;
-	margin:0 auto;
-	padding: 6px 6px 29px;
-}
-
-.flexbox-item b {
-	color: #fff;
-	display: block;
-	font-size: 18px;
-	font-weight: normal;
-	margin: 0;
-	padding: 10px 0 5px;
-	text-transform: capitalize;
-}
-
-.flexbox-item p {
-	color: #fff;
-	font-size: 12px;
-	line-height: 24px;
-	margin: 0;
-	padding: 0;
-}
-
-#main-body {
+.gallery-item img {
 	margin: 0 auto;
-	min-height: 812px;
-	padding: 20px 0 50px;
-	width: 936px;
 }
 
-#main-body h2 {
+.gallery-item h4 {
+	margin: 10px;
+	padding: 5px 10px 10px 10px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+
+#legislation h2 {
 	background: url(../images/bg-featured.png) repeat-x;
 	color: #fff;
 	font-family: 'Comfortaa-Regular';
@@ -173,23 +181,21 @@ header .article h1 {
 	top: -14px;
 }
 
-.article-2 {
+#legislation {
 	width: 460px;
 	background: #6B6B6B;
 	border: 5px solid #878787;
 	border-radius: 4px;
-	float: none;
-	margin: 0;
 	padding: 0 15px;
 	position: relative;
 	margin-bottom: 25px;
 	padding: 35px 15px 20px;
 	text-align: right;
 }
-.article-2 h2 {
+#legislation h2 {
 	text-align: left;
 }
-.article-2 h2 a {
+#legislation h2 a {
 	background: url(../images/icons.png) no-repeat 0 10px;
 	display: inline-block;
 	height: 40px;
@@ -197,7 +203,7 @@ header .article h1 {
 	padding: 0;
 	text-indent: -99999px;
 }
-.article-2 p {
+#legislation p {
 	color: #f5f5f5;
 	font-size: 12px;
 	line-height: 24px;
@@ -224,22 +230,24 @@ header .article h1 {
 	color: #3F3B3B;
 }
 
+#footer-container {
+	margin: 0 auto;
+	min-width: 936px;
+	width: 60%;
+}
+
 footer {
 	background: #AD2020;
 	border-top: 1px solid #DB1414;
 	margin: 0;
-	padding: 0;
-}
-
-footer > div {
-	margin: 0 auto;
 	padding: 30px 0 28px;
 	overflow: hidden;
 	text-align: center;
-	width: 936px;
+	width: 100%;
+	min-width: 1125px;
 }
 
-footer div p {
+footer p {
 	color: #ededed;
 	display: inline-block;
 	float: right;
@@ -249,16 +257,17 @@ footer div p {
 	padding: 27px 0 0;
 	text-align: center;
 }
-footer div .connect {
+footer .connect {
+	box-sizing: content-box;
 	background: #7F1E1E;
 	float: right;
 	height: 18px;
-	margin: 0 20px 0 150px;
+	margin: 0 20px 0 220px;
 	padding: 22px 20px;
 	overflow: hidden;
 	width: 144px;
 }
-footer div .connect span {
+footer .connect span {
 	color: #ededed;
 	display: inline-block;
 	float: left;
@@ -268,7 +277,7 @@ footer div .connect span {
 	margin: 0;
 	padding: 0 0 0 39px;
 }
-footer div .connect a {
+footer .connect a {
 	background: url(../images/icons-white.png) no-repeat;
 	display: block;
 	float: left;
@@ -278,27 +287,28 @@ footer div .connect a {
 	text-indent: -99999px;
 	width: 20px;
 }
-footer div .connect #twitter {
+footer .connect #twitter {
 	background-position: 0 -32px;
 }
-footer div .connect #twitter:hover {
+footer .connect #twitter:hover {
 	background-position: -25px -32px;
 }
-footer div .connect #facebook {
+footer .connect #facebook {
 	background-position: 0 -57px;
 }
-footer div .connect #facebook:hover {
+footer .connect #facebook:hover {
 	background-position: -25px -57px;
 }
-footer div .connect #googleplus {
+footer .connect #googleplus {
 	background-position: 0 -82px;
 }
-footer div .connect #googleplus:hover {
+footer .connect #googleplus:hover {
 	background-position: -25px -82px;
 }
-footer div .connect #pinterest {
+footer .connect #pinterest {
 	background-position: 0 -107px;
 }
-footer div .connect #pinterest:hover {
+footer .connect #pinterest:hover {
 	background-position: -25px -107px;
 }
+
